@@ -1,4 +1,29 @@
 .explore-container img{
-    height: 66px;
-    width: 100px;
+    border-radius: 3px 1px 1px 3px;
+    height: 100%;
+    width: 100%;
+}
+.explore-container .list-option{
+    display: flex;
+    height: 4.5rem;
+}
+.explore-container .option{
+    display: flex;
+    align-items: center;
+    width: 15rem;
+    justify-items: center;
+    margin-right: 1rem;
+	border: 1px solid rgba(136, 136, 136, 0.244); 
+	border-radius: 3px;
+}
+.explore-container .option-text{
+    width: 60%;
+}
+.explore-container .option-img{
+    height: 100%;
+    width: 40%;
+}
+.option-text h3{
+    padding-left: 10%;
+    margin:0;
 }
