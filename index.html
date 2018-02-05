@@ -7,9 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="hamburger.css">
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="explore.css">
   <link rel="stylesheet" href="experiences.css">
@@ -22,20 +25,17 @@
   <!-- Navbar -->
   <header>
     <img class="logo" src="images/airbnb_logo.jpg" alt="logo de Airbnb">
-    <ul>
-      <li>
-        <a href="#">Become host</a>
-      </li>
-      <li>
-        <a href="#">Help</a>
-      </li>
-      <li>
-        <a href="#">Sign Up</a>
-      </li>
-      <li>
-        <a href="#">Log In</a>
-      </li>
-    </ul>
+    <div class="topnav" id="myTopnav">
+      <a href="#">Become host</a>
+      <a href="#">Help</a>
+      <a href="#">Sign Up</a>
+      <a href="#">Log In</a>
+      <div class="hamburger-container" onclick="myBurger(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
   </header>
   <!-- Navbar END -->
 
@@ -50,22 +50,30 @@
         <br /> all over the world.</h1>
       <div class="search-container">
         <form action="index.html">
-            <div class="search-bar">
-              <img  src="images/loopimage.png" alt="search picture">
-              <input type="text" placeholder="Try 'Montreal'" name="search">
-              <button type="submit">Search</button>
+          <div class="search-bar">
+            <img src="images/loopimage.png" alt="search picture">
+            <input type="text" placeholder="Try 'Montreal'" name="search">
+            <button type="submit">Search</button>
+          </div>
+          <div class="search-category-container">
+            <h3>Explore Airbnb</h3>
+            <div class="list-category">
+              <ul>
+                <li>
+                  <button>All</button>
+                </li>
+                <li>
+                  <button>Homes</button>
+                </li>
+                <li>
+                  <button> Experiences</button>
+                </li>
+                <li>
+                  <button>Restaurants</button>
+                </li>
+              </ul>
             </div>
-            <div class="search-category-container">
-              <h3>Explore Airbnb</h3>
-              <div class="list-category">
-                <ul>
-                  <li><button >All</button></li>
-                  <li><button >Homes</button></li>
-                  <li><button > Experiences</button></li>
-                  <li><button >Restaurants</button></li>
-                </ul>
-              </div>
-            </div>
+          </div>
         </form>
       </div>
 
@@ -188,6 +196,86 @@
             </div>
           </div>
         </div>
+        <div class="experience">
+          <div class="experience-img">
+            <img src="images/surf.jpg" alt="a female surfing">
+          </div>
+          <div class="experience-text">
+            <h5>SURF LESSON - BALI</h5>
+            <h3>The Surf Champion</h3>
+            <h4>$11 CAD per person</h4>
+            <div class="experience-rating">
+              <div class="experience-stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p>45</p>
+            </div>
+          </div>
+        </div>
+        <div class="experience">
+          <div class="experience-img">
+            <img src="images/surf.jpg" alt="a female surfing">
+          </div>
+          <div class="experience-text">
+            <h5>SURF LESSON - BALI</h5>
+            <h3>The Surf Champion</h3>
+            <h4>$11 CAD per person</h4>
+            <div class="experience-rating">
+              <div class="experience-stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p>45</p>
+            </div>
+          </div>
+        </div>
+        <div class="experience">
+          <div class="experience-img">
+            <img src="images/surf.jpg" alt="a female surfing">
+          </div>
+          <div class="experience-text">
+            <h5>SURF LESSON - BALI</h5>
+            <h3>The Surf Champion</h3>
+            <h4>$11 CAD per person</h4>
+            <div class="experience-rating">
+              <div class="experience-stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p>45</p>
+            </div>
+          </div>
+        </div>
+        <div class="experience">
+          <div class="experience-img">
+            <img src="images/surf.jpg" alt="a female surfing">
+          </div>
+          <div class="experience-text">
+            <h5>SURF LESSON - BALI</h5>
+            <h3>The Surf Champion</h3>
+            <h4>$11 CAD per person</h4>
+            <div class="experience-rating">
+              <div class="experience-stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p>45</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -203,43 +291,75 @@
     <div class="footer-container">
       <div class="footer-top">
         <div class="currency-language">
-            <div class="border">
-              <p>language</p>
-            </div>
-            <div class="border">
-              <p>currency</p>
-            </div>
+          <div class="border">
+            <p>language</p>
+          </div>
+          <div class="border">
+            <p>currency</p>
+          </div>
         </div>
         <div class="footer-texts-container">
           <div class="footer-text-link">
             <h3>Airbnb</h3>
-            <ul>  
-              <li><a href="">About us</a></li>
-              <li><a href="">Careers</a></li>
-              <li><a href="">Press</a></li>
-              <li><a href="">Policies</a></li>
-              <li><a href="">Help</a></li>
-              <li><a href="">Diversity & Belonging</a></li>
+            <ul>
+              <li>
+                <a href="">About us</a>
+              </li>
+              <li>
+                <a href="">Careers</a>
+              </li>
+              <li>
+                <a href="">Press</a>
+              </li>
+              <li>
+                <a href="">Policies</a>
+              </li>
+              <li>
+                <a href="">Help</a>
+              </li>
+              <li>
+                <a href="">Diversity & Belonging</a>
+              </li>
             </ul>
           </div>
           <div class="footer-text-link">
             <h3>Discover</h3>
             <ul>
-              <li><a href="">Trust & Safety</a></li>
-              <li><a href="">Travel Credit</a></li>
-              <li><a href="">Airbnb Citizen</a></li>
-              <li><a href="">Business Travel</a></li>
-              <li><a href="">GuideBooks</a></li>
-              <li><a href="">Airbnbmag</a></li>
+              <li>
+                <a href="">Trust & Safety</a>
+              </li>
+              <li>
+                <a href="">Travel Credit</a>
+              </li>
+              <li>
+                <a href="">Airbnb Citizen</a>
+              </li>
+              <li>
+                <a href="">Business Travel</a>
+              </li>
+              <li>
+                <a href="">GuideBooks</a>
+              </li>
+              <li>
+                <a href="">Airbnbmag</a>
+              </li>
             </ul>
           </div>
           <div class="footer-text-link">
             <h3>Hosting</h3>
             <ul>
-              <li><a href="">Why Host</a></li>
-              <li><a href="">Hospitality</a></li>
-              <li><a href="">Responsible Hosting</a></li>
-              <li><a href="">Community Centre</a></li>
+              <li>
+                <a href="">Why Host</a>
+              </li>
+              <li>
+                <a href="">Hospitality</a>
+              </li>
+              <li>
+                <a href="">Responsible Hosting</a>
+              </li>
+              <li>
+                <a href="">Community Centre</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -250,12 +370,30 @@
         </div>
         <div class="footer-bottom-right">
           <ul>
-            <li><a href="">Terms</a></li>
-            <li><a href="">Privacy</a></li>
-            <li><a href="">Site Map</a></li>
-            <li><a href=""><span class="fa fa-facebook"></span></a></li>
-            <li><a href=""><span class="fa fa-twitter"></span></a></li>
-            <li><a href=""><span class="fa fa-instagram"></span></a></li>
+            <li>
+              <a href="">Terms</a>
+            </li>
+            <li>
+              <a href="">Privacy</a>
+            </li>
+            <li>
+              <a href="">Site Map</a>
+            </li>
+            <li>
+              <a href="">
+                <span class="fa fa-facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="fa fa-twitter"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="fa fa-instagram"></span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -265,7 +403,22 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script>
+    // animation du burger
+    function myBurger(x) {
+      x.classList.toggle("change");
 
+      // ajoute la classe responsive si la classname est juste topnav
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    
+    }
+   
+  </script>
 </body>
 
 </html>

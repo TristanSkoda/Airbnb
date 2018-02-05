@@ -1,5 +1,5 @@
 .experiences-container{
-    height: 25rem;
+    
     width: 100%;
 }
 .experiences-container img{
@@ -8,13 +8,14 @@
     width: 100%;
 }
 .list-experiences{
-    height: 18rem;
+    flex-wrap: wrap;
     display: flex;
+    justify-content: space-between;
 }
 .experience{
     height: 100%;
-    width: 15rem;
-    margin-right: 1.15rem;
+    width: 24%;
+    margin-bottom: 3rem;
 }
 .experience-img{
     height: 57%;
@@ -31,4 +32,25 @@
 .experience-rating{
     display: flex;
     font-size: .8rem;
+}
+@media (max-width: 1200px) { 
+	.experience{
+        width: 32%;
+    }
+}
+
+
+@media (max-width: 992px) { 
+    .experience{
+        width: 49%;
+    }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+
+@media (max-width: 576px) { 
+  
 }
